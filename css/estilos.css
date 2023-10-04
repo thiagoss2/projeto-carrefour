@@ -1,4 +1,8 @@
 
+body {
+   font-size: "Ubuntu" , sans-serif;
+}
+
 
 /*===================== ESTILOS REUTILIZAVEIS ============== */
 :root {
@@ -9,7 +13,42 @@
    --cor-porcentagem-card:#ffd220;
    --cor-card-descricao:#014aad;
 
+   /* ESTILOS DE FONTES */
+
+   --fz-16:16px;
+   --fz-20:20px;
+   
+
 
 }
 
 
+
+.container-propio {
+
+   padding: 0 2%;
+}
+
+
+
+
+.banner-superior img  {
+
+   width: 100%;
+}
+
+.cabecalho {
+
+}
+
+.cabecalho-header {
+   height: 50px;
+}
+
+.cabecalho-main {
+
+}
+
+.cabecalho-footer {
+
+}
