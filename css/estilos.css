@@ -1,6 +1,7 @@
 
 body {
    font-size: "Ubuntu" , sans-serif;
+   background-color: var(--cor-fundo-body);
 }
 
 
@@ -12,11 +13,18 @@ body {
    --cor-icones-azul:#5b87d5;
    --cor-porcentagem-card:#ffd220;
    --cor-card-descricao:#014aad;
+   --cor-funso-header:#1E5BC6;
+   --cor-cinza-geral:#F2F2F2;
+   --cor-fundo-body:#FFFFFF;
 
    /* ESTILOS DE FONTES */
 
-   --fz-16:16px;
-   --fz-20:20px;
+   --fz-10:10px;
+   --fz-12:12px;
+   --fz-13:13px;
+   --fz-14:14px;
+   --fz-16:12px;
+   --fz-20:13px;
    
 
 
@@ -32,15 +40,17 @@ body {
 
 
 
+
+.cabecalho {
+   background-color: var(--cor-funso-header)
+
+}
+
+
 .banner-superior img  {
 
    width: 100%;
 }
-
-.cabecalho {
-
-}
-
 .cabecalho-superior {
 
 }
