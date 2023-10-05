@@ -34,7 +34,7 @@ body {
 
 .container-propio {
 
-   padding: 0 2%;
+   padding: 0 5%;
 }
 
 
@@ -52,19 +52,27 @@ body {
    width: 100%;
 }
 .cabecalho-superior {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
 
 }
 
 
 .cabecalho-superior__bloco-esquerdo {
 
+   
 } 
 
 .cabecalho-superior__bloco-esquerdo .menu-lista {
+   display: flex;
+   align-items: end;
 
 }
 
 .cabecalho-superior__bloco-esquerdo .menu-item__lista {
+   width: 120px   ;
 
 }
 
@@ -90,7 +98,12 @@ body {
 
 /* CABECALHO SUPERIROR BLOCO DIREITO */
 .cabecalho-superior-bloco-direito {
+  
+}
 
+
+.cabecalho-superior-bloco-direito__lista {
+   display: flex;
 }
 
 
