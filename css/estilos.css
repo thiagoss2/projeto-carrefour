@@ -1,6 +1,6 @@
 
 body {
-   font-size: "Ubuntu" , sans-serif;
+   font-size: "Ubuntu", sans-serif;
    background-color: var(--cor-fundo-body);
 }
 
@@ -16,6 +16,7 @@ body {
    --cor-funso-header:#1E5BC6;
    --cor-cinza-geral:#F2F2F2;
    --cor-fundo-body:#FFFFFF;
+   --cor-bloco-menus:#4373CE;
 
    /* ESTILOS DE FONTES */
 
@@ -55,6 +56,7 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding-top: 5px;
 
 
 }
@@ -68,19 +70,50 @@ body {
 .cabecalho-superior__bloco-esquerdo .menu-lista {
    display: flex;
    align-items: end;
+   gap: 5px;
+  
 
 }
 
 .cabecalho-superior__bloco-esquerdo .menu-item__lista {
-   width: 120px   ;
+   width: 160px;
+   height: 32px;
+   padding: 10px 10px 10px ;
+   background-color: var(--cor-bloco-menus);
+   border-radius: 5px 5px 0 0;
 
+}
+
+.cabecalho-superior__bloco-esquerdo .menu-item__lista:hover  {
+   background-color: var(--cor-fundo-body);
+   color: var(--cor-azul-claro);
+   text-decoration: none;
+  
 }
 
 .cabecalho-superior__bloco-esquerdo .menu-item__link {
 
+  height: inherit ;
+
+}
+
+.cabecalho-superior__bloco-esquerdo .menu-item__link:hover {
+
+   background-color: var(--cor-fundo-body);
+
+
 }
 
 .cabecalho-superior__bloco-esquerdo .centralizar {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   gap: 5px;
+   height: 100%;
+   color: #fff;
+   font-size: var(--fz-13);
+   text-transform: uppercase;
+   font-weight: bold;
 
 }
 
@@ -98,15 +131,27 @@ body {
 
 /* CABECALHO SUPERIROR BLOCO DIREITO */
 .cabecalho-superior-bloco-direito {
+ 
+   
   
 }
 
 
 .cabecalho-superior-bloco-direito__lista {
    display: flex;
+   gap: 20px;
 }
 
+.cabecalho-superior-bloco-direito__item-lista {
 
+}
+
+.cabecalho-superiror-bloco-direito__link {
+   color: var(--cor-fundo-body);
+   font-size: var(--fz-13);
+   text-transform: capitalize;
+
+}
 
 
 
