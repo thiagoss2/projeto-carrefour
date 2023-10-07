@@ -34,7 +34,9 @@ body {
 }
 
 .cabecalho {
-   background-color: var(--cor-funso-header)
+   background-color: var(--cor-funso-header);
+   margin-bottom: 20px;
+   
 }
 
 
@@ -134,3 +136,14 @@ body {
 .cabecalho-superiror-bloco-direito__link:hover {
    color: var(--cor-fundo-body);
 }
+
+/* 
+   caixa dos input com 36.4px de altura
+   margin com 42px esquerda e direita
+
+   input com 1px 2px 1px 16px
+   input com largura de 426px
+
+    botao com 48px de larguta
+
+ */
