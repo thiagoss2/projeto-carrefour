@@ -11,6 +11,7 @@ cabecalhoSuperior.addEventListener('click', function () {
 var textoLink = document.querySelectorAll(".js-menu-lista-link");
 
 
+textoLink.addEventListener('mouseup' , function () {
 
-
+});
 
