@@ -31,6 +31,39 @@ body {
 .container-propio {
 
    padding: 0 5%;
+    /* animation:  bloco-elemento  2s ease infinite;  */
+}
+
+
+
+@keyframes bloco-elemento  {
+  
+ 0% {
+
+   left:-20%;
+ }
+
+ 40% {
+     left: 20%;   
+ }
+
+ 100% {
+     left: -20%;
+ }
+   
+}
+
+
+.bloco-mensagem {
+   height: 8vw;
+   width: 300px;
+   position: absolute;
+   bottom: 10px;
+   left: -20%;
+
+   background-color: var(--cor-cinza-geral);
+   border-radius: 10px;
+
 }
 
 .cabecalho {
