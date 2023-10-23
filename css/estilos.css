@@ -16,6 +16,7 @@ body {
    --cor-cinza-geral: #F2F2F2;
    --cor-fundo-body: #FFFFFF;
    --cor-bloco-menus: #4373CE;
+   --cor-escura:black;
 
    /* ESTILOS DE FONTES */
 
@@ -184,57 +185,77 @@ body {
 
 /* ================== CONTEUDO PRINCIPAL ============================= */
 
-.conteudo-principal-superior {}
+.conteudo-principal-superior {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
 
-.conteudo-principal-superior__logo {}
+.conteudo-principal-superior__logo img {
+   width: 150px;
+   height: 28px;
+}
 
-.conteudo-principal-superior__busca {}
+.conteudo-principal-superior__busca {
+ 
+   margin: 0 42px;
+}
 
-.conteudo-principal-superior__busca-bloco {}
+.conteudo-principal-superior__busca-bloco {
+   height: 36.4px;
+   display: flex;
+}
 
-.conteudo-principal-superior__busca-input {}
+.conteudo-principal-superior__busca-input {
+   width: 424.73px;
+   border:1px solid var(--cor-principal);
+   padding-left: 16px;
+   border-radius: 5px 0 0 5px ;
+   outline: none;
 
-.cconteudo-principal-superior__busca-botao {}
+}
+
+.cconteudo-principal-superior__busca-botao {
+   width: 48px;
+   border-radius: 0 5px 5px 0 ;
+   padding: 0;
+   border-color: var(--cor-principal);
+   background-color: transparent;
+   background-color: var(--cor-principal);
+   border: 0;
+}
 
 .conteudo-principal-superior__menu {}
 
 .conteudo-principal-superior__menu-lista {
-
+   display: flex;
+   gap: 15px;
 }
 
-.conteudo-principal-superior__menu-item-lista {
-
-}
+.conteudo-principal-superior__menu-item-lista {}
 
 .conteudo-principal-superior__menu-link {
-
+   display: flex;
+   gap: 10px;
+   align-items: end;
+   margin-top: 8px;
+   color: var();
 }
 
 .conteudo-principal-superior__menu-link i {
-
+    font-size: 30px;
+  
 }
 
 .conteudo-principal-superior__menu-texto {
-
+   font-size: 12px;
+   color: var(--cor-escura);
 }
 
-.conteudo-principal-superior__carrinho {
+.conteudo-principal-superior__carrinho {}
 
-}
+.conteudo-principal-superior__carrinho-link {}
 
-.conteudo-principal-superior__carrinho-link {
+.conteudo-principal-superior__carrinho-link i {}
 
-}
-
-.conteudo-principal-superior__carrinho-link i {
-
-}
-
-.conteudo-principal-superior__carrinho-contador {
-
-}
-
-
-
- 
-
+.conteudo-principal-superior__carrinho-contador {}

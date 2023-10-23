@@ -1,0 +1,26 @@
+{
+   // Use o IntelliSense para saber mais sobre os atributos possíveis.
+   // Focalizar para exibir as descrições dos atributos existentes.
+   // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+   "version": "0.2.0",
+   "configurations": [
+      {
+         {
+            "name": "Debug with Nodemon",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
+            "args": ["${workspaceFolder}/index.js"],
+            "runtimeExecutable": "node",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": ["<node_internals>/**"],
+            "cwd": "${workspaceFolder}",
+            "protocol": "inspector",
+            "outputCapture": "std"
+          }
+      
+  
+   ]
+}
