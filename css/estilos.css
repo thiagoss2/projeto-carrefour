@@ -17,6 +17,8 @@ body {
    --cor-fundo-body: #FFFFFF;
    --cor-bloco-menus: #4373CE;
    --cor-escura:black;
+   --cor-verde:#40AA60;
+   --cor-funo-menu-departamentos:#F2F2F2;
 
    /* ESTILOS DE FONTES */
 
@@ -141,7 +143,6 @@ body {
 }
 
 /* CABECALHO SUPERIROR BLOCO DIREITO */
-.cabecalho-superior-bloco-direito {}
 
 .cabecalho-superior-bloco-direito__lista {
    display: flex;
@@ -184,6 +185,9 @@ body {
 
 
 /* ================== CONTEUDO PRINCIPAL ============================= */
+.conteudo-principal {
+   margin-bottom: 18px;
+}
 
 .conteudo-principal-superior {
    display: flex;
@@ -223,16 +227,23 @@ body {
    background-color: transparent;
    background-color: var(--cor-principal);
    border: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.conteudo-principal-superior__menu {}
+.cconteudo-principal-superior__busca-botao  i {
+   color:var(--cor-fundo-body) ;
+}
+
+
 
 .conteudo-principal-superior__menu-lista {
    display: flex;
    gap: 15px;
 }
 
-.conteudo-principal-superior__menu-item-lista {}
+
 
 .conteudo-principal-superior__menu-link {
    display: flex;
@@ -252,10 +263,73 @@ body {
    color: var(--cor-escura);
 }
 
-.conteudo-principal-superior__carrinho {}
 
-.conteudo-principal-superior__carrinho-link {}
+.conteudo-principal-superior__carrinho-link {
+   position: relative;
+   display: flex;
+ 
+}
 
-.conteudo-principal-superior__carrinho-link i {}
+.conteudo-principal-superior__carrinho-link i {
+   font-size: 30px;
+   margin-top: 12px;
 
-.conteudo-principal-superior__carrinho-contador {}
+
+}
+
+.conteudo-principal-superior__carrinho-contador {
+   color: var(--cor-fundo-body);
+   background-color: var(--cor-verde);
+   border-radius: 10px;
+   width: 20px;
+   height: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   right: -8px;
+   top: 5px;
+   font-size: 13px;
+   
+}
+
+.menu-departamentos {
+   background-color: var(--cor-funo-menu-departamentos);
+   padding: 5px 0;
+
+
+}
+
+.menu-departamentos__lista {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.menu-departamentos__item-lista {
+
+}
+
+/* DROPDOWN */
+
+.menu-departamentos-dropdown {
+
+}
+
+.menu-departamentos-Sdropdown__lista {
+
+}
+
+.menu-departamentos-dropdown__link {
+
+}
+
+
+
+/* FIM DO DROPDOWN */
+
+
+.menu-departamentos__link {
+
+}
