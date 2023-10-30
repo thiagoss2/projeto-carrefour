@@ -307,6 +307,7 @@ body {
    
 }
 
+
 .menu-departamentos__item-lista {
 
    position: relative;
@@ -319,26 +320,48 @@ body {
 
 .menu-departamentos-dropdown {
    position: absolute;
-   top: 40.99px;
-   
-   visibility: hidden;
-   opacity: 0;
+   top: 34px;
+   visibility: visible   ;
+   opacity: 1;
+   background-color:var(--cor-fundo-body);
+   padding: 10px 8px ;
+   left: -10px;
+   font-size: 14px;
+   width: 290px;
+   text-transform: capitalize;
 
 
 }
 
 .menu-departamentos__item-lista:hover  .menu-departamentos-dropdown{
    visibility: visible;
-   opacity: 1;
+   
 
 }
-.menu-departamentos-Sdropdown__lista {
+
+.menu-departamentos__item-lista:nth-child(1){
+   font-size: 16px;  
+   font-weight: bold; 
 
 }
+
+
 
 .menu-departamentos-dropdown__link {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 14px;
+   color: var(--cor-escura);
 
 }
+
+.menu-departamentos-dropdown__link i {
+   font-size: 25px;
+   color: var(--cor-escura);
+
+}
+
 
 
 
