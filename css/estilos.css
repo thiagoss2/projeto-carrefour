@@ -219,7 +219,7 @@ body {
 
 }
 
-.cconteudo-principal-superior__busca-botao {
+.conteudo-principal-superior__busca-botao {
    width: 48px;
    border-radius: 0 5px 5px 0 ;
    padding: 0;
@@ -232,7 +232,7 @@ body {
    align-items: center;
 }
 
-.cconteudo-principal-superior__busca-botao  i {
+.conteudo-principal-superior__busca-botao  i {
    color:var(--cor-fundo-body) ;
 }
 
