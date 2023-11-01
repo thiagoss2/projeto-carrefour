@@ -356,11 +356,16 @@ background-color: var(--cor-fundo-body);
     padding: 8px 0 ;
 }
 
+.menu-departamentos-dropdown__lista:hover {
+   background-color: var(--cor-cinza-geral);
+   
+}
+
 /* SUBDROPDOWN */
 
 .menu-departamentos-dropdown-subdropdown {
    position: absolute;
-   top:-10px;
+   top:0;
    left:100%;
    background-color: var(--cor-cinza-geral);
    padding-top: 20px;
