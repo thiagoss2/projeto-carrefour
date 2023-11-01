@@ -294,7 +294,7 @@ body {
 }
 
 .menu-departamentos {
-   background-color: var(--cor-funo-menu-departamentos);
+background-color: var(--cor-fundo-body);
    padding: 5px 0;
 
 
@@ -314,13 +314,14 @@ body {
    padding: 10px 0;
    font-size: 14px;
 
+
 }
 
 /* DROPDOWN */
 
 .menu-departamentos-dropdown {
    position: absolute;
-   top: 34px;
+   top: 40.99px;
    visibility: visible   ;
    opacity: 1;
    background-color:var(--cor-fundo-body);
@@ -329,19 +330,22 @@ body {
    font-size: 14px;
    width: 290px;
    text-transform: capitalize;
+   visibility: hidden;
 
 
 }
 
 .menu-departamentos__item-lista:hover  .menu-departamentos-dropdown{
-   visibility: visible;
+   visibility: visible
    
 
 }
 
 .menu-departamentos__item-lista:nth-child(1){
    font-size: 16px;  
-   font-weight: bold; 
+   font-weight: bold;
+   padding: 15px 0;
+
 
 }
 
