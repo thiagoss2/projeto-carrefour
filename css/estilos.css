@@ -330,7 +330,7 @@ background-color: var(--cor-fundo-body);
    font-size: 14px;
    width: 290px;
    text-transform: capitalize;
-   visibility: hidden;
+   visibility: visible;
 
 
 }
@@ -348,6 +348,20 @@ background-color: var(--cor-fundo-body);
 
 
 }
+
+.menu-departamentos-dropdown__lista {
+    position:relative;
+}
+
+/* SUBDROPDOWN */
+
+.menu-departamentos-dropdown-subdropdown {
+   position: absolute;
+   top:0;
+   left:100%;
+
+}
+
 
 
 
