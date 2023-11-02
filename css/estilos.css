@@ -170,6 +170,7 @@ body {
 
 .cabecalho-superiror-bloco-direito__link:hover {
    color: var(--cor-fundo-body);
+
 }
 
 /* 
@@ -332,12 +333,15 @@ background-color: var(--cor-fundo-body);
    text-transform: capitalize;
    visibility: visible;
    background-color: var(--cor-fundo-body);
+ 
+
 
 
 }
 
 .menu-departamentos__item-lista:hover  .menu-departamentos-dropdown{
-   visibility: visible
+   visibility: visible;
+
    
 
 }
@@ -353,7 +357,7 @@ background-color: var(--cor-fundo-body);
 .menu-departamentos-dropdown__lista {
     position:relative;
     border-bottom: 1px solid var(--cor-cinza-geral);
-    padding: 8px 0 ;
+    padding: 5px 0 ;
 }
 
 .menu-departamentos-dropdown__lista:hover {
@@ -371,9 +375,16 @@ background-color: var(--cor-fundo-body);
    padding-top: 20px;
    padding-left: 20px;
    padding-right: 20px;
+   visibility: hidden;
 
 }
 
+
+
+.menu-departamentos-dropdown__lista:hover .menu-departamentos-dropdown-subdropdown {
+    transition: 2s ease; 
+    visibility: visible; 
+} 
 
 .menu-departamentos-dropdown-subdropdown__divisao {
    display: flex;
@@ -411,6 +422,7 @@ background-color: var(--cor-fundo-body);
    font-size: 14px;
    color: var(--cor-escura);
    font-weight: 200;
+   padding-left: 10px;
 
 }
 
