@@ -317,7 +317,7 @@ background-color: var(--cor-fundo-body);
 
 
 }
-   
+
 .menu-departamentos__link {
    color: #333;
    display: flex;
@@ -402,7 +402,7 @@ background-color: var(--cor-fundo-body);
    margin-bottom: 20px;
 }
 .menu-departamentos-dropdown-subdropdown__lista {
-   width: 200px;
+   width: 238px;
 }
 
 .menu-departamentos-dropdown-subdropdown__item-lista {
@@ -425,7 +425,7 @@ background-color: var(--cor-fundo-body);
 
 .menu-departamentos-dropdown-subdropdown__secao {
    /* width: 200px; */
-   margin-left: 200px;
+   margin-left: 50px;
 }
 
 /* FIM DO SUBDROPDOWN */
