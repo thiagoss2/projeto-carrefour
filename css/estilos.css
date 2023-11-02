@@ -317,6 +317,16 @@ background-color: var(--cor-fundo-body);
 
 
 }
+   
+.menu-departamentos__link {
+   color: #333;
+   display: flex;
+   align-items: center;
+}
+
+.menu-departamentos__link  i {
+    font-size: 25px;
+} 
 
 /* DROPDOWN */
 
@@ -375,7 +385,8 @@ background-color: var(--cor-fundo-body);
    padding-top: 20px;
    padding-left: 20px;
    padding-right: 20px;
-   visibility: hidden;
+   display: flex;
+   /* visibility: hidden; */
 
 }
 
@@ -412,6 +423,11 @@ background-color: var(--cor-fundo-body);
 
 } 
 
+.menu-departamentos-dropdown-subdropdown__secao {
+   /* width: 200px; */
+   margin-left: 200px;
+}
+
 /* FIM DO SUBDROPDOWN */
 
 
@@ -420,9 +436,16 @@ background-color: var(--cor-fundo-body);
    justify-content: space-between;
    align-items: center;
    font-size: 14px;
-   color: var(--cor-escura);
-   font-weight: 200;
+   color:#333;
+   font-weight: 700;
    padding-left: 10px;
+   stroke: #333;
+
+
+}
+
+.menu-departamentos-dropdown__link:hover {
+   color: #333;
 
 }
 
@@ -438,6 +461,11 @@ background-color: var(--cor-fundo-body);
 /* FIM DO DROPDOWN */
 
 
-.menu-departamentos__link {
+
+
+.menu-departamentos__lista  .menu-departamentos__item-lista:nth-child(1)  {
+
+   color:#02296d ;
+   font-weight: bold;
 
 }
