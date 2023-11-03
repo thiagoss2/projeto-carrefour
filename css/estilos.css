@@ -19,6 +19,8 @@ body {
    --cor-escura: black;
    --cor-verde: #40AA60;
    --cor-funo-menu-departamentos: #F2F2F2;
+   --nova-cor-textos:#393333;
+   
 
    /* ESTILOS DE FONTES */
 
@@ -423,8 +425,9 @@ body {
 }
 
 .menu-departamentos-dropdown-subdropdown__link {
-   color: var(--cor-bloco-menus);
+   color: var(--nova-cor-textos);
    font-size: 14px;
+   font-weight: 200;
 
 }
 
@@ -492,6 +495,11 @@ body {
 }
 
 .menu-departamentos-dropdown__lista:nth-child(2) {
+   display: none;
+
+}
+
+.menu-departamentos-dropdown__lista:nth-child(3) {
    display: none;
 
 }
