@@ -480,6 +480,35 @@ body {
 
 
 
+
+/* MEDIA QUERYES */
+@media screen and (max-width:1400px) {
+   .menu-departamentos-dropdown-subdropdown__secao-img {
+      width: 120px;
+   }
+
+   .conteudo-principal-superior__menu-texto {
+      display: none;
+   }
+
+   .menu-departamentos-dropdown-subdropdown__divisao {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .conteudo-principal-superior__menu-lista {
+      gap:50px;
+   }
+}
+
+@media screen and (max-width:1160px) {
+
+   .cabecalho-superior-bloco-direito__lista{
+      display: none;
+   }
+
+
+}
 .menu-departamentos__lista .menu-departamentos__item-lista:nth-child(1) {
 
    color: #02296d;
@@ -503,3 +532,4 @@ body {
    display: none;
 
 }
+
