@@ -533,3 +533,7 @@ body {
 
 }
 
+
+.card {
+   display: none;
+}
