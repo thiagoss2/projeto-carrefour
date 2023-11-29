@@ -1,38 +1,41 @@
+var mysql = require('mysql2');
+
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "root",
+    database: "teste"
+});
 
 
-const arredondamento = Math.round(12.5);
 
 
+function retornaDadosDoBanco(query) {
+
+    let dados = [];
+
+    con.connect(err => {
 
 
+        if (err) throw err;
 
-async function connect() {
-    if (global.connection && global.connection.state !== 'disconnected')
-        return global.connection;
+        con.query(query, (err, results, fields) => {
+            if (err) throw err;
 
-    const mysql = require("mysql2/promise");// retorna um objeto para acessar o banco de dados
-    const connection =
-              await mysql.createConnection("mysql://root:luiztools@localhost:3306/crud"); 
+            dados = results;
+            console.log(dados)
 
-              // a variavel connection não recebera o retorno do metodo createConnection enquando a promessa não
-            // for resolvida 
+        })
+    });
 
-            // implementação const [variavel] await connection.query("SELECT * FROM users");                
 
-      connection.
-
-    console.log("Conectou no MySQL!");
-
-    global.connection = connection;
-    return connection;
+    return dados;
 
 }
 
 
-async function selectCustomers(){
-    const conn = await connect();
-    const [rows] = await conn.query('SELECT * FROM clientes;');
-    return rows;
-}
+let dados = retornaDadosDoBanco('select * from usuario');
 
-module.exports = {selectCustomers}
+console.log()
+
+
