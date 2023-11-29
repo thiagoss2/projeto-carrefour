@@ -543,3 +543,9 @@ body {
 .card {
    border: none;
 }
+
+
+.card__imagem {
+   width: 250px;
+   height: 250px;
+}

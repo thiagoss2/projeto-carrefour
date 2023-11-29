@@ -18,42 +18,90 @@ class Produto {
    }
 }
 
-produto = new Produto("/img/imagem-geladeira.jpg" ,
+produto = new Produto("img/wiskey.jpg",
                         "Geladeira brastemp" , 500.00);
 
+   img = document.createElement("img");
+   img.setAttribute("class" , "card__imagem");
 
 
-const div = document.querySelector(".segundo-conteudo-principal");
+   img.src = "img/wiskey.jpg";   
+
+   const itemLista = document.querySelector(".card__item-lista");
+
+   let cardBlocoImg = itemLista.querySelector(".card__bloco-img");
+
+   cardBlocoImg.appendChild(img);
+
+   console.log(cardBlocoImg);
+
+
+   // criarProduto(itemLista , produto);
+
+
+
+
+
+
+//   criarProduto(itemLista , produto)
 
 // passar o query selector dos cards
-function criarProduto(div) {
+function criarProduto(itemLista , produto) {
+
+   let itemListaArray = Array.from(itemLista);
     
    let li =  document.createElement("li");
-   li.setAttribute("card__item-lista");
-
+   li.setAttribute("class" , "card__item-lista");
+   
    a = document.createElement("a");
-   a.setAttribute("card__link");
+   a.setAttribute("class" , "card__link");
 
    let div2 = document.createElement("div");
-   div2.setAttribute("card");
+   div2.setAttribute( "class" ,"card");
 
    let figure = document.createElement("figure");
-   figure.setAttribute("card__bloco-img");
+   figure.setAttribute( "class" , "card__bloco-img");
+
+ 
 
    let img = document.createElement("img");
-   img.setAttribute("card__imagem")
+   img.setAttribute("class", "card__imagem")
+
+   img.src = produto.getImagem();
+
+   console.log(img)
    
    
    let figcapiton = document.createElement("figcaption");
    
-   let cardCorpo = document.createElement("card__corpo");
+   let cardCorpo = document.createElement("div");
+   cardCorpo.setAttribute("class" , "card__corpo");
 
    let p = document.createElement("p");
+   p.setAttribute("class" , "card__preco")
+   p.innerHTML = "texto "
+
+   console.log(li);
 
 
-   // card__corpo 
-   // p card__preco
+  
+
+li.appendChild(a);
+a.appendChild(div2);
+
+div2.appendChild(figure);
+div2.appendChild(cardCorpo);
+
+figure.appendChild(img);
+figure.appendChild(figcapiton);
+
+cardCorpo.appendChild(p);
+
+
+
+itemListaArray.push(li);
 
 
 
 }
+
