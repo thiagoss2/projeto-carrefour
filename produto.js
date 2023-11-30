@@ -1,107 +1,72 @@
 class Produto {
-   constructor(imagem  , descricao  , preco) {
+   constructor(imagem, descricao, preco) {
        this.imagem = imagem;
        this.descricao = descricao;
        this.preco = preco;
    }
 
    getImagem() {
-      return this.imagem;
+       return this.imagem;
    }
 
-   getDescricao(){
-      return this.descricao;
+   getDescricao() {
+       return this.descricao;
    }
 
    getPreco() {
-      return this.preco;
+       return this.preco;
    }
 }
 
-produto = new Produto("img/wiskey.jpg",
-                        "Geladeira brastemp" , 500.00);
+// Criando uma instância da classe Produto
+const produto = new Produto("img/wiskey.jpg", "Geladeira Brastemp", 500.00);
 
-   img = document.createElement("img");
-   img.setAttribute("class" , "card__imagem");
-
-
-   img.src = "img/wiskey.jpg";   
-
-   const itemLista = document.querySelector(".card__item-lista");
-
-   let cardBlocoImg = itemLista.querySelector(".card__bloco-img");
-
-   cardBlocoImg.appendChild(img);
-
-   console.log(cardBlocoImg);
-
-
-   // criarProduto(itemLista , produto);
-
-
-
-
-
-
-//   criarProduto(itemLista , produto)
-
-// passar o query selector dos cards
-function criarProduto(itemLista , produto) {
-
-   let itemListaArray = Array.from(itemLista);
-    
-   let li =  document.createElement("li");
-   li.setAttribute("class" , "card__item-lista");
-   
-   a = document.createElement("a");
-   a.setAttribute("class" , "card__link");
-
-   let div2 = document.createElement("div");
-   div2.setAttribute( "class" ,"card");
-
-   let figure = document.createElement("figure");
-   figure.setAttribute( "class" , "card__bloco-img");
-
- 
-
-   let img = document.createElement("img");
-   img.setAttribute("class", "card__imagem")
-
-   img.src = produto.getImagem();
-
-   console.log(img)
-   
-   
-   let figcapiton = document.createElement("figcaption");
-   
-   let cardCorpo = document.createElement("div");
-   cardCorpo.setAttribute("class" , "card__corpo");
-
-   let p = document.createElement("p");
-   p.setAttribute("class" , "card__preco")
-   p.innerHTML = "texto "
-
-   console.log(li);
-
-
-  
-
-li.appendChild(a);
-a.appendChild(div2);
-
-div2.appendChild(figure);
-div2.appendChild(cardCorpo);
-
-figure.appendChild(img);
-figure.appendChild(figcapiton);
-
-cardCorpo.appendChild(p);
-
-
-
-itemListaArray.push(li);
-
-
-
+// Função para criar um elemento HTML com uma classe específica
+function insereElemento(tipoElemento, nomeClasse) {
+   let elemento = document.createElement(tipoElemento);
+   elemento.setAttribute("class", nomeClasse);
+   return elemento;
 }
 
+// Função para criar um cartão de produto e anexá-lo ao itemLista fornecido
+function criarProduto(itemLista, produto) {
+   let itemListaArray = Array.from(itemLista);
+
+   // Criando elementos HTML
+   let li = insereElemento("li", "card__item-lista");
+   let a = insereElemento("a", "card__link");
+   let div = insereElemento("div", "card");
+   let figure = insereElemento("figure", "card__bloco-img");
+   let img = insereElemento("img", "card__imagem");
+   let figcapiton = insereElemento("figcaption", "");
+   let cardCorpo = insereElemento("div", "card__corpo");
+   let p = insereElemento("p", "card__preco");
+
+   // Definindo conteúdo e atributos
+   img.src = produto.getImagem();
+   figcapiton.textContent = produto.getDescricao();
+   p.textContent = `Preço: R$ ${produto.getPreco().toFixed(2)}`;
+
+   // Anexando elementos para criar a estrutura do cartão
+   li.appendChild(a);
+   a.appendChild(div);
+   div.appendChild(figure);
+   div.appendChild(cardCorpo);
+   figure.appendChild(img);
+   figure.appendChild(figcapiton);
+   cardCorpo.appendChild(p);
+
+   // Anexando o cartão ao itemLista
+
+    
+ for (let index = 0; index < itemListaArray.length; index++) {
+   itemListaArray[index].appendChild(li);
+   
+ }
+}
+
+// Selecionando o elemento item-lista
+const itemLista = document.querySelectorAll(".container-propio");
+
+// Chamando a função para criar um cartão de produto
+criarProduto(itemLista, produto);
