@@ -18,8 +18,7 @@ class Produto {
    }
 }
 
-// Criando uma instância da classe Produto
-const produto = new Produto("img/wiskey.jpg", "Geladeira Brastemp", 500.00);
+
 
 // Função para criar um elemento HTML com uma classe específica
 function insereElemento(tipoElemento, nomeClasse) {
@@ -29,8 +28,8 @@ function insereElemento(tipoElemento, nomeClasse) {
 }
 
 // Função para criar um cartão de produto e anexá-lo ao itemLista fornecido
-function criarProduto(itemLista, produto) {
-   let itemListaArray = Array.from(itemLista);
+function criarProduto(container, produto) {
+   let itemListaArray = Array.from(container);
 
    // Criando elementos HTML
    let li = insereElemento("li", "card__item-lista");
@@ -58,15 +57,20 @@ function criarProduto(itemLista, produto) {
 
    // Anexando o cartão ao itemLista
 
-    
+    console.log(itemListaArray[0]);
  for (let index = 0; index < itemListaArray.length; index++) {
    itemListaArray[index].appendChild(li);
    
  }
 }
 
+
+// Criando uma instância da classe Produto
+const produto = new Produto("img/cervejeira.jpg", "Cervejeira Philco Pcv142p 91l Pto 110v", 500.00);
+
 // Selecionando o elemento item-lista
 const itemLista = document.querySelectorAll(".container-propio");
 
 // Chamando a função para criar um cartão de produto
 criarProduto(itemLista, produto);
+criarProduto(itemLista, new Produto("img/fritadeira.jpg" , "Fritadeira Elétrica NeoFry 3,5 Litros Preta 127V Elgin" , 199.00));
