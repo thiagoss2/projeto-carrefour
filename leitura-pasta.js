@@ -83,9 +83,7 @@ for (let i = 0; i < pasta1.length; i++) {
   for (let j = 0; j < arrayCopiaPasta2.length; j++) {
     // se o item for diferente
     if (item ===  arrayCopiaPasta2[j]) {
-   //   let element = arrayCopiaPasta2[j];
-  //    console.log(element);
-      arrayCopiaPasta2.splice(j , 1);
+       arrayCopiaPasta2.splice(j , 1);
       
     }
   }
