@@ -30,9 +30,22 @@ function retornaListaDePalavras(texto, listaDePalavras) {
 }
 
 
-const palavraBuscada = "b";
-const listaDePalavras = ["Baldurs gate", "Treads of fate", "Legend of legaia" ,"Balala"];
+// const palavraBuscada = "L";
+// const listaDePalavras = ["Baldurs gate", "Treads of fate", "Legend of legaia" ,"Balala"];
 
-let lista  = retornaListaDePalavras(palavraBuscada, listaDePalavras);
+// let lista  = retornaListaDePalavras(palavraBuscada, listaDePalavras);
 
-console.log(lista)
+// console.log(lista)
+
+const busca  =
+        document.querySelector(".conteudo-principal-superior__busca-input").value;
+
+
+const texto = "Thiago";
+
+for(let i = 0 ; i < texto.length ; i++) {
+    let letra = texto.charAt(i);
+    console.log(letra);
+    setTimeout()
+
+}

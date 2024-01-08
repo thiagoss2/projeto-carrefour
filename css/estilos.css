@@ -211,6 +211,7 @@ body {
 .conteudo-principal-superior__busca-bloco {
    height: 36.4px;
    display: flex;
+   position: relative;
 }
 
 .conteudo-principal-superior__busca-input {
@@ -240,6 +241,15 @@ body {
 }
 
 
+.conteudo-principal-superior__busca-modal {
+   position:absolute;
+   top:47px;
+   width: 100%;
+   border: 1px solid var(--cor-principal);
+   height: fit-content;
+   z-index: 10;
+
+}
 
 .conteudo-principal-superior__menu-lista {
    display: flex;
